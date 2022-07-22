@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 80px;
+    padding-left: 110px;
     padding-right: 110px;
     flex-wrap: wrap;
 }
@@ -30,6 +30,10 @@
     border: none;
 }
 
+.CabecalhoMenuItemAsterisco:hover {
+    background-color: #FFE24D;
+}
+
 .AsteriscoImagem {
     width: 100%;
 }
@@ -37,25 +41,11 @@
 .CabecalhoMenu {
     display: flex;
     flex-wrap: wrap;
-}
-
-.CabecalhoMenuItemHome {
-    background-color: #424242;
-    height: 80px;
-    width: 200px;
-    border: none;
-}
-
-.HomeImagem {
-    width: 100%;
-}
-
-.CabecalhoMenuItemHome:hover {
-    background-color: #FFE24D;
+    gap: 30px;
 }
 
 .CabecalhoMenuItemPlayList {
-    background-color: #5A5A5A;
+    background-color: #353535;
     color: whitesmoke;
     height: 80px;
     width: 200px;
@@ -71,7 +61,7 @@
 }
 
 .CabecalhoMenuItemContact {
-    background-color: #7D7D7D;
+    background-color: #353535;
     color: whitesmoke;
     height: 80px;
     width: 200px;
