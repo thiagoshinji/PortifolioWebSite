@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-size: 1.2rem;
@@ -9,11 +8,9 @@
 }
 
 .Body {
-    font-size: 100%;
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .Cabecalho {
@@ -21,101 +18,85 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 291px;
+    padding-left: 80px;
+    padding-right: 110px;
     flex-wrap: wrap;
 }
 
-.CabecalhoImagem {
-    width: 160px;
+.CabecalhoMenuItemAsterisco {
+    background-color: #353535;
+    height: 80px;
+    width: 200px;
+    border: none;
+}
+
+.AsteriscoImagem {
+    width: 100%;
 }
 
 .CabecalhoMenu {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .CabecalhoMenuItemHome {
     background-color: #424242;
-    color: whitesmoke;
-    height: 160px;
-    width: 350px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 18px;
+    height: 80px;
+    width: 200px;
     border: none;
 }
 
 .HomeImagem {
-padding-bottom: 70px;
-width: 200px;
-height: 200px;
+    width: 100%;
 }
 
 .CabecalhoMenuItemHome:hover {
     background-color: #FFE24D;
-    color: black;
 }
 
 .CabecalhoMenuItemPlayList {
     background-color: #5A5A5A;
     color: whitesmoke;
-    height: 160px;
-    width: 350px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 18px;
+    height: 80px;
+    width: 200px;
     border: none;
 }
 
 .PlayListImagem {
-    padding-bottom: 165px;
-    width: 300px;
-    height: 300px;
+    width: 100%;
 }
 
 .CabecalhoMenuItemPlayList:hover {
     background-color: #FFE24D;
-    color: black;
 }
 
 .CabecalhoMenuItemContact {
     background-color: #7D7D7D;
     color: whitesmoke;
-    height: 160px;
-    width: 350px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 18px;
+    height: 80px;
+    width: 200px;
     border: none;
 }
 
 .ContactImagem {
-    padding-bottom: 163px;
-    width: 300px;
-    height: 300px;
+    width: 100%;
 }
 
 .CabecalhoMenuItemContact:hover {
     background-color: #FFE24D;
-    color: black;
 }
 
 .Main {
-    margin-top: 110px;
-    align-items: center;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin: auto;
+    padding: 55px;
+
+    max-width: 1300px;
 }
 
 .Pai {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    max-width: 3000px;
-    position: absolute;
 }
 
 .Grid1 {
@@ -123,35 +104,35 @@ height: 200px;
 }
 
 .ImgGrid1 {
-    margin: 0 auto;
-    width: 1300px;
-    min-height: 1300px;
+    width: 100%;
 }
 
 .ImgGrid2 {
+    width: 100%;
     display: block;
-    width: 1300px;
-    height: 650px;    
 }
 
 .ImgGrid3 {
+    width: 100%;
+}
 
-    width: 1300px;
-    height: 651px;    
+.Grid2 {
+
+}
+
+.Grid3 {
+
 }
 
 .Rodape {
     background-color: #FFE24D;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 200px;    
-    line-height: 100px;
+    padding-bottom: 17px;
 }
 
+
 .RodapeImagem {
-    display: block;
-    margin: 0 auto;
-    height: 150px;
-    padding-top: 40px;
+       margin: auto;
+       display: block;
+       padding-top: 15px;
 }
