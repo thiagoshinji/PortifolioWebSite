@@ -7,27 +7,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.Html {
+    width: 100%;
+    height: 100%;
+}
+
 .Body {
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .Cabecalho {
     background-color: #353535;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     padding-left: 110px;
     padding-right: 110px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .CabecalhoMenuItemAsterisco {
     background-color: #353535;
-    height: 80px;
-    width: 200px;
     border: none;
+    flex-wrap: wrap;
 }
 
 .CabecalhoMenuItemAsterisco:hover {
@@ -36,24 +42,24 @@
 
 .AsteriscoImagem {
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .CabecalhoMenu {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
 }
 
 .CabecalhoMenuItemPlayList {
     background-color: #353535;
     color: whitesmoke;
-    height: 80px;
-    width: 200px;
     border: none;
+    width: 100%;
 }
 
 .PlayListImagem {
     width: 100%;
+
 }
 
 .CabecalhoMenuItemPlayList:hover {
@@ -63,9 +69,8 @@
 .CabecalhoMenuItemContact {
     background-color: #353535;
     color: whitesmoke;
-    height: 80px;
-    width: 200px;
     border: none;
+    width: 100%;
 }
 
 .ContactImagem {
@@ -79,7 +84,6 @@
 .Main {
     margin: auto;
     padding: 55px;
-
     max-width: 1300px;
 }
 
@@ -106,23 +110,57 @@
     width: 100%;
 }
 
-.Grid2 {
-
-}
-
 .Grid3 {
 
 }
 
 .Rodape {
     background-color: #FFE24D;
-    width: 100%;
-    padding-bottom: 17px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
 }
 
 
 .RodapeImagem {
-       margin: auto;
-       display: block;
-       padding-top: 15px;
+    margin: auto;
+    display: block;
+    width: 100%;
+    grid-column-start: 2;
+    max-width: 400px;
+}
+
+@media only screen and (min-width: 365px) and (max-width: 700px) {
+    .Pai {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+    
+    .Grid1 {
+        grid-row: 1/1;
+    }
+
+    .ImgGrid1 {
+        display: block;
+    }
+
+    .Cabecalho {
+        padding-left: 00px;
+        padding-right: 30px;
+    }
+
+    .Main {
+        padding: 30px;
+    }
+
+    .CabecalhoMenu {
+        gap: 20px;
+    }
+
+    .RodapeImagem {
+        min-width: 310px;
+    }
+
+
 }
